@@ -5,12 +5,11 @@ import "core:sort"
 import "core:os"
 import "core:strings"
 import "core:strconv"
-import "core:math"
 
 part1 :: proc(a: []int, b: []int) -> int {
 	accum := 0
 	for i:= 0; i < len(a); i += 1 {
-		accum += math.abs(a[i] - b[i])
+		accum += abs(a[i] - b[i])
 	}
 	return accum
 }
